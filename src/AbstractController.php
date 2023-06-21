@@ -211,7 +211,7 @@ abstract class AbstractController
      */
     protected function constructEndpoint(): string
     {
-        return $this->endpoint;
+        return $this->endpoint . '?tweet.fields=created_at';
     }
 
     /**
